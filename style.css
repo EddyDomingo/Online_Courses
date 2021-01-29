@@ -1,0 +1,84 @@
+.wrapper h1{
+    text-align: center;
+    font-size: 30px;
+    font-family:Audiowide;
+}
+
+.img-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.single-img {
+    padding: 0 20px 20px;
+}
+
+img:hover{
+
+    opacity: .5;
+    transition: .9s;
+    
+}
+
+#form1 {
+    padding: 15px;
+    border: 1px solid #666;
+    background: #fff;
+    display: none;
+    justify-content: center;
+  }
+  
+#form2 {
+    padding: 15px;
+    border: 1px solid #666;
+    background: #fff;
+    display: none;
+    justify-content: center;
+  }
+
+.center-block {
+    
+    text-align: center;
+  }
+
+
+
+.checked {
+    color: orange;
+  }
+
+body {
+  background-color: #f4f2f2;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
