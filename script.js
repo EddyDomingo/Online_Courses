@@ -8,11 +8,11 @@
 
 $(document).ready(function () {
   $("#formButton1").click(function(){
-      $("#form2").toggle();
+      $("#form2").slideToggle();
   })
 
   $("#formButton").click(function(){
-     $("#form1").toggle();
+     $("#form1").slideToggle();
     })
 
 });
@@ -107,6 +107,11 @@ function funcUser(){
     if (typeof(Storage) !== "undefined") {
     // Store
         localStorage.setItem("User Information", userSplit);
+        localStorage.setItem("First Name", userSplit[0]);
+        localStorage.setItem("Last Name", userSplit[1]);
+        localStorage.setItem("Email", userSplit[2]);
+      
+       document.getElementById("userRegistered").innerHTML = localStorage.getItem("First Name", "Last Name") + " is logged in";
         
        } else {
          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
